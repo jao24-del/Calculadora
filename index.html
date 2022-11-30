@@ -1,0 +1,40 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora Beta</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://images.vexels.com/media/users/3/127358/isolated/preview/736663fe6f9e03fcb39ace9020c42b4c-icone-estacionario-da-calculadora.png">
+
+</head>
+
+<body>
+
+  <div id="calculadora">
+    <div id="calculadoramain">
+      <p id="visor">
+      <div id="risquin"></div>
+      <div id="btsmeio">
+        <button class="btm" onclick="inserir('1')">1</button>
+        <button class="btm" onclick="inserir('2')">2</button>
+        <button class="btm" onclick="inserir('3')">3</button>
+        <button class="btm" onclick="inserir('4')">4</button>
+        <button class="btm" onclick="inserir('5')">5</button>
+        <button class="btm" onclick="inserir('6')">6</button>
+        <button class="btm" onclick="inserir('7')">7</button>
+        <button class="btm" onclick="inserir('8')">8</button>
+        <button class="btm" onclick="inserir('9')">9</button>
+        <button class="btm" onclick="inserir('0')">0</button>
+        <button  class="operador" onclick="inserir('+')">+</button>
+        <button  class="operador" onclick="inserir('-')">-</button>
+
+      </div>
+      <div id="btslado">
+        <button class="operador" onclick="inserir('*')">×</button>
+        <button class="operador" onclick="inserir('/')">/</button>
+        <button class="btl" onclick="calcular()">=</button>
+        <button id="clear" onclick="document.getElementById('visor').innerHTML = '';">Clear All</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="raphael.js"></script>
+</body>
